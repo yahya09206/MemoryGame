@@ -1,0 +1,42 @@
+body{
+	background-color: black;
+}
+
+button {
+	color: #00FFFF;
+	background-color: black;
+	border: none;
+	font-family: 'Indie Flower', cursive;
+	margin: auto;
+	text-align: center;
+}
+
+
+.container {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.tile {
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+	margin: auto;
+	border: 1px solid #00FFFF;
+	border-top: none;
+	border-bottom: none;
+	border-radius: 5%;
+
+
+}
+.pics {
+
+	height: 150px;
+	width: 150px;
+}
+#font {
+	font-family: 'Indie Flower', cursive;
+	color: #00FFFF;
+	margin: auto;
+	text-align: center;
+}
