@@ -14,18 +14,20 @@ button {
 
 .container {
 	display: inline-block;
-	margin: 0 auto;
+	margin-left: 25%;
+	margin-top: 5%;	
 }
 
 .tile {
 	height: 150px;
 	width: 150px;
 	display: inline-block;
-	margin: auto;
+	margin: 0px auto;
 	border: 1px solid #00FFFF;
 	border-top: none;
 	border-bottom: none;
 	border-radius: 5%;
+
 
 
 }
@@ -33,6 +35,7 @@ button {
 
 	height: 150px;
 	width: 150px;
+	margin: 0px auto;
 }
 #font {
 	font-family: 'Indie Flower', cursive;
