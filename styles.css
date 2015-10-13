@@ -28,14 +28,17 @@ button {
 	border-bottom: none;
 	border-radius: 5%;
 
-
-
 }
+/*.hide{
+	display: none;
+}
+*/
 .pics {
 
 	height: 150px;
 	width: 150px;
 	margin: 0px auto;
+	background-image: url( "http://www.drawingsomeone.com/wp-content/uploads/2015/08/Samuel-L.-Jackson-Drawing-7.jpg");
 }
 #font {
 	font-family: 'Indie Flower', cursive;
