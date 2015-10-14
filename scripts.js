@@ -1,7 +1,7 @@
 //code to run after page is fully loaded
 $(document).ready(function(){
 
-	//declared variable clicked for player one and two also which images were clicked
+	//variable declaration
 	var clickedOne;
 	var clickedTwo;
 	var clickedImg1;
@@ -12,6 +12,7 @@ $(document).ready(function(){
 	var playerTwo;
 	var player1 = true;
 
+	//array with the url's of the gifs
 	var url = [ "http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif",
 		"http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif",
 
@@ -33,14 +34,22 @@ $(document).ready(function(){
 
 	];
 
+	//
 	var gameTiles = $('.tile');
+	
 	shuffle(url);
+
 	console.log(url);
+
 	gameTiles.each(function(index){
+
 	var img = $(this).find('img');
+
 	img.attr('src', url[index]);
 	});
 
+
+	//Fischer Yates shuffle function found on stackoverflow
 	function shuffle(array) {
   			var currentIndex = array.length, temporaryValue, randomIndex ;
 
@@ -60,13 +69,6 @@ $(document).ready(function(){
 	  		return array;
 	}
 
-
-	//code to prevent page from refreshing when submit button is pressed
-	// $('.button').click(function(event){
-	// 	event.preventDefault();
-	// 	document.getElementById('.submit').reset();
-
-	// });
 	
 	//clicker counter initialization
 	$('.tile').click(function(){
@@ -99,31 +101,57 @@ $(document).ready(function(){
 				if(clickedOne === clickedTwo){
 					$("img").removeClass(".visibility");
 				}
+				//conditional that resets the clicker counter and shuffles the board again for player two
+				//
 				if(matches  === 6 && player1){
 					alert('It is player 2s turn');
+
 					$('#displaymessage').text('It is player 2s turn');
+
 					playerOne = numClicks;
+
 					numClicks = 0;
+
 					player1 = false;
+
 					$('#thecount').text(numClicks);
+
 					$('.pics').hide();
+
 					clickedOne = false;
+
 					matches = 0;
+
 					var gameTiles = $('.tile');
+
 					shuffle(url);
+
 					console.log(url);
+
 					gameTiles.each(function(index){
+
 					var img = $(this).find('img');
+
 					img.attr('src', url[index]);
+
 					});
+
 				}else if (!player1 && matches === 6) {
+
 					playerTwo = numClicks;
+
 					if(playerOne > playerTwo){
+
 						$('#displaymessage').text('The winner is player 2');
+
 					}else if (playerTwo > playerOne) {
+
 						$('#displaymessage').text('The winner is player 1');
+
 					}else{ 
-						$('#displaymessage').text('The winner is player 2');
+
+						$('#displaymessage').text('The game is a tie');
+
 					}
 				}
 
@@ -131,14 +159,20 @@ $(document).ready(function(){
 			}else{
 				//time in between when mouse is clicked and the img is displayed and hidden once again
 				var timeoutId = setTimeout(function () {
+
 					console.log('You are wrong');
+
 					clickedImg1.hide();
+
 					clickedImg2.hide();
+
 					clearTimeout(timeoutId);
+
 				}, 1000);
 			}
 
 			clickedOne = null;
+
 			clickedTwo = null;
 		}
 	})
