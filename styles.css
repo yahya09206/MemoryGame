@@ -1,4 +1,4 @@
-
+/* Styling for classes and IDs */
 .button,
 #displaymessage {
 	color: black;
@@ -8,6 +8,8 @@
 	margin: auto;
 	text-align: center;
 	display: inline;
+	font-size: 45px;
+	margin-left: 30%;
 }
 
 
@@ -28,10 +30,7 @@
 	border-radius: 5%;
 
 }
-/*.hide{
-	display: none;
-}
-*/
+
 .pics {
 
 	height: 150px;
@@ -48,4 +47,5 @@
 
 #thecount {
 	color: black;
+	font-size: 20px;
 }
