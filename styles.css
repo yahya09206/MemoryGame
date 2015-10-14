@@ -1,4 +1,3 @@
-/* Styling for classes and IDs */
 
 .button,
 #displaymessage {
@@ -17,8 +16,9 @@
 
 .container {
 	display: inline-block;
-	margin: auto;
-	margin-left: 25%;
+/*	margin: 0 auto;
+*/	margin-left: 25%;
+	margin-right: 25%;
 	margin-top: 5%;	
 }
 
@@ -26,7 +26,7 @@
 	height: 150px;
 	width: 150px;
 	display: inline-block;
-	margin: 0px auto;
+	margin: 0 auto;
 	border: 1px solid black;
 	border-top: none;
 	border-bottom: none;
@@ -40,6 +40,7 @@
 	width: 150px;
 	margin: 0px auto;
 	border-radius: 5%;
+	max-width: 100%;
 }
 #font {
 	font-family: 'Indie Flower', cursive;
@@ -53,13 +54,23 @@
 	font-size: 20px;
 }
 
+/*Media Queries */
+@media and (max-width: 1256px){
+	.container {
+		display: inline-block;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin: auto;
+	}
+}
+
 /*ipad mini screen*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1250px) {
 
     .tile {
-    	display: inline-block;
-    	position: relative;
-    	height: 120px;
+	    display: inline-block;
+	    position: relative;
+	    height: 120px;
 		width: 120px;
 		display: inline-block;
 		position: relative;
@@ -71,27 +82,27 @@
 
     }
     .container {
-    	width: 50%;
+    	width: 400px;
     }
     .pics {
-    	height: 120px;
+	    height: 120px;
 		width: 120px;
 		margin: 0px auto;
 		border-radius: 5%;
     }
 }
 
-/*Iphone 6+ screen*/
-@media only screen and (min-width:375px) and (max-width: 430px)   {
+/*Iphone 6/6+ screen*/
+@media screen and (min-width: 370px) and (max-width: 430px) {
 
     .tile {
-    	display: inline-block;
-    	position: relative;
-    	height: 75px;
+		display: inline-block;
+		position: relative;
+		height: 75px;
 		width: 75px;
 		display: inline-block;
 		position: relative;
-		margin: 0px auto;
+		margin:  auto;
 		border: 1px solid black;
 		border-top: none;
 		border-bottom: none;
@@ -99,12 +110,17 @@
 
     }
     .container {
-    	width: 75%;
+	    width: 75%;
+	    margin-left: 25%;
+	    margin-right: 25%;
+	    max-height: 100%;
+	    max-width: 100%;
+
     }
     .pics {
-    	height: 75px;
+		height: 75px;
 		width: 75px;
-		margin: 0px auto;
+		margin: 0 auto;
 		border-radius: 5%;
     }
 }

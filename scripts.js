@@ -106,7 +106,7 @@ $(document).ready(function(){
 				if(matches  === 6 && player1){
 					alert('It is player 2s turn');
 
-					$('#displaymessage').text('It is player 2s turn');
+					$('#displaymessage').text('Player 2s turn');
 
 					playerOne = numClicks;
 
