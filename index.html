@@ -3,17 +3,19 @@
 <head>
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="path/to/sweet-alert.css" />
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="path/to/sweet-alert.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 	<title>Match 'em Up!</title>
 </head>
 <body>
 	<div class="container">
-
+			<div id="displaymessage"></div>
 			<h2 id="font">Match 'Em Up</h2>
 			<div class="row">
 			<div class="tile">
-				<img  id="pic_one" class='pics hide' src="http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif">
+				<img  id="pic_one" class='pics hide visibility' src="http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif">
 
 			</div>
 			<div class="tile">
@@ -38,7 +40,7 @@
 				<img id="pic_seven" class='pics hide' src="http://38.media.tumblr.com/tumblr_lkqyd0GGHE1qc3n92o1_500.gif">
 			</div>
 			<div class="tile">
-				<img  id="pic_eight" class='pics hide' src="http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif" >
+				<img  id="pic_eight" class='pics hide visibility' src="http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif" >
 			</div>
 			</div>
 			
@@ -58,9 +60,11 @@
 			</div>
 			</div>
 
-		<form>
-			<button id="button">Play again</button>		
-		</form>
+			<div id="thecount">0</div>
+			
+			<form>
+				<button class="button">Play again</button>	
+			</form>
 
 
 	</div>
