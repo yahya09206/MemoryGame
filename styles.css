@@ -1,4 +1,5 @@
 /* Styling for classes and IDs */
+
 .button,
 #displaymessage {
 	color: black;
@@ -10,11 +11,13 @@
 	display: inline;
 	font-size: 45px;
 	margin-left: 30%;
+	max-width: 100%
 }
 
 
 .container {
 	display: inline-block;
+	margin: auto;
 	margin-left: 25%;
 	margin-top: 5%;	
 }
@@ -37,7 +40,6 @@
 	width: 150px;
 	margin: 0px auto;
 	border-radius: 5%;
-	background-image: url( "http://www.drawingsomeone.com/wp-content/uploads/2015/08/Samuel-L.-Jackson-Drawing-7.jpg");
 }
 #font {
 	font-family: 'Indie Flower', cursive;
@@ -50,3 +52,60 @@
 	color: black;
 	font-size: 20px;
 }
+
+/*ipad mini screen*/
+@media screen and (max-width: 800px) {
+
+    .tile {
+    	display: inline-block;
+    	position: relative;
+    	height: 120px;
+		width: 120px;
+		display: inline-block;
+		position: relative;
+		margin: 0px auto;
+		border: 1px solid black;
+		border-top: none;
+		border-bottom: none;
+		border-radius: 5%;
+
+    }
+    .container {
+    	width: 50%;
+    }
+    .pics {
+    	height: 120px;
+		width: 120px;
+		margin: 0px auto;
+		border-radius: 5%;
+    }
+}
+
+/*Iphone 6+ screen*/
+@media only screen and (min-width:375px) and (max-width: 430px)   {
+
+    .tile {
+    	display: inline-block;
+    	position: relative;
+    	height: 75px;
+		width: 75px;
+		display: inline-block;
+		position: relative;
+		margin: 0px auto;
+		border: 1px solid black;
+		border-top: none;
+		border-bottom: none;
+		border-radius: 5%;
+
+    }
+    .container {
+    	width: 75%;
+    }
+    .pics {
+    	height: 75px;
+		width: 75px;
+		margin: 0px auto;
+		border-radius: 5%;
+    }
+}
+
