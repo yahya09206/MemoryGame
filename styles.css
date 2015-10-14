@@ -98,8 +98,8 @@
     .tile {
 		display: inline-block;
 		position: relative;
-		height: 75px;
-		width: 75px;
+		height: 90px;
+		width: 90px;
 		display: inline-block;
 		position: relative;
 		margin:  auto;
@@ -118,10 +118,23 @@
 
     }
     .pics {
-		height: 75px;
-		width: 75px;
+		height: 90px;
+		width: 90px;
 		margin: 0 auto;
 		border-radius: 5%;
     }
+    .button,
+	#displaymessage {
+		color: black;
+		background-color: white;
+		border: none;
+		font-family: 'Indie Flower', cursive;
+		margin: auto;
+		text-align: center;
+		display: inline;
+		font-size: 45px;
+		margin-left: 30%;
+		max-width: 100%
+	}
 }
 
