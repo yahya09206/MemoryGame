@@ -36,6 +36,7 @@
 	height: 150px;
 	width: 150px;
 	margin: 0px auto;
+	border-radius: 5%;
 	background-image: url( "http://www.drawingsomeone.com/wp-content/uploads/2015/08/Samuel-L.-Jackson-Drawing-7.jpg");
 }
 #font {
