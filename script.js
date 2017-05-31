@@ -12,8 +12,8 @@ matches = 0;
 
 //Array of gifs
 //array with the url's of the gifs
-	var url = [ 
-	
+var url = [ 
+
 		"http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif",
 		"http://i1345.photobucket.com/albums/p670/JLe10371037/Samuel-L-Jackson-baby-out-of-my-face-spike-awards-1354071672z_zps8b119d51.gif",
 
@@ -32,3 +32,5 @@ matches = 0;
 		"http://media.tumblr.com/tumblr_lo2tyrWh8o1qfeod9.gif",
 		"http://media.tumblr.com/tumblr_lo2tyrWh8o1qfeod9.gif"
 ];
+
+document.querySelectorAll('.tile').style.display = 'none';
