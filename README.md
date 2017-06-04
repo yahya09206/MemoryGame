@@ -1,4 +1,4 @@
-MemoryGame
+MemoryGame(V2 coming soon made with vanilla javascript)
 
 Overview
 -------------------------------------------------------
